@@ -1,0 +1,13 @@
+name: 'Setup Variant environment'
+description: 'Setup a Variant environment and add it to the PATH, additionally providing proxy support'
+author: 'GitHub'
+inputs: 
+  variant-version:
+    description: 'The Variant version to download (if necessary) and use. Example: 1.9.3'
+    default: '0.35.1'
+runs:
+  using: 'node12'
+  main: 'lib/setup-variant.js'
+branding:
+  icon: octagon
+  color: orange
