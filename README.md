@@ -17,7 +17,7 @@ Basic:
 ```yaml
 steps:
 - uses: actions/checkout@master
-- uses: actions/setup-variant@v1
+- uses: variantdev/setup-variant@v1
   with:
     variant-version: '0.35.1' # The Variant version to download (if necessary) and use.
 - run: variant version
@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Setup variant
-        uses: actions/setup-variant@v1
+        uses: variantdev/setup-variant@v1
         with:
           variant-version: ${{ matrix.variant }}
       - run: variant version
